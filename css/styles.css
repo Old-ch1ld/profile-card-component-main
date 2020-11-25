@@ -1,0 +1,111 @@
+/*----- BASIC SETUP -----*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #19a2ae;
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
+  background-position: top -49.5rem left -28.5rem, right -23rem bottom -63rem;
+  background-repeat: no-repeat;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.8rem;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: #2d3248;
+}
+
+/*----- BLOCK SETUP -----*/
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.block__child {
+  width: 35rem;
+}
+
+.block__child__upper {
+  height: 14rem;
+  background: url(../images/bg-pattern-card.svg) no-repeat;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block__child__center {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 0 2rem;
+}
+
+.block__child__lower {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  border-top: 0.01rem solid #969696;
+  border-radius: 0 0 15px 15px;
+  padding: 2.5rem 2rem 2rem;
+}
+
+/*----- BLOCK ELEMENTS -----*/
+
+/* UPPER */
+.block__child__upper--img {
+  border-radius: 50%;
+  border: 0.5rem solid white;
+  position: relative;
+  top: 7rem;
+}
+
+/* CENTER */
+.block__child__center--infor {
+  text-align: center;
+  line-height: 3rem;
+}
+
+.block__child__center--infor--bold {
+  font-weight: 700;
+}
+
+.block__child__center--infor--small {
+  font-size: 1.4rem;
+  color: #6a6f81;
+}
+
+.block__child__center--infor--grey {
+  color: #6a6f81;
+}
+
+/* LOWER */
+.block__child__lower__child {
+  text-align: center;
+  line-height: 2rem;
+}
+
+.block__child__lower__left--bold {
+  font-weight: 700;
+}
+
+.block__child__lower__left--small {
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  color: #6a6f81;
+}

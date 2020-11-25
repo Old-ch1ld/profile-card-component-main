@@ -1,0 +1,10 @@
+/* background-position: top -55rem left -76.5rem, right -75rem bottom -112rem; mobile version */
+@media only screen and (max-width: 375px) {
+  body {
+    background-position: top -55rem left -76.5rem, right -75rem bottom -62rem;
+  }
+
+  .block__child {
+    max-width: 33rem;
+  }
+}
